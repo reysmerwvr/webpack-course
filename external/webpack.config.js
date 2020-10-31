@@ -1,0 +1,10 @@
+const path = require('path')
+
+module.exports = {
+  entry: path.join(__dirname, '..', 'index.js'),
+  mode: 'development',
+  output: {
+    path: path.join(__dirname, '..', 'dist'),
+    filename: 'main.js'
+  }
+}

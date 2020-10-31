@@ -1,0 +1,25 @@
+{
+  "name": "webpack-4",
+  "version": "1.0.0",
+  "description": "Webpack 4 Course",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --entry ./index.js --output-path ./dist/ --mode development",
+    "build:local": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:multi": "webpack --config ./multi-entry-points/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "@ReysmerWVR",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  }
+}
